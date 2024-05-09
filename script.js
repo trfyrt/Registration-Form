@@ -6,6 +6,7 @@
             for(var i = 0; i < inputan.length; i++){
                 inputan[i].required = true; //
             }
+            
 
             //untuk memvalidasi date yang diinput (tidak boleh melebihi dari hari pepngisian form)
             //membuat variabel inputDate yang dimana merupakan element dengan Id birthdateIn
@@ -164,7 +165,7 @@
                 //menentukan file dengan format apa yang valid
                 const valids = ['image/jpeg', 'image/png'];
 
-                //jika tidak valid maka akan memunculkan alert dan mengubah value dari input file tadi kembali kosong
+                //jika tidak valid maka akan memunculkan alert dan mengubah value dari input file tadi kembali menjadi kosong
                 if(!valids.includes(inputImageType)){
                     alert("Please insert Image only");
                     document.querySelector("input[type=file]").value = "";

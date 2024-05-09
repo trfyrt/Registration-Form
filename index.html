@@ -1,21 +1,29 @@
 <html>
     <head>
         <title>Registration Form</title>
+
+        <!-- memasukkan css dan js bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </head>
     <body>
+
+        <!-- Header -->
         <div>
             <div class="container-fluid" style="background-color: brown; padding: 4vh;">
                 <h1 style="text-align: center; color: white;"><b>Registration Form</b></h1>
                 <p style="text-align: center; color: white;">Fill out the form carefully for registration</p>
             </div>
+        <!-- end of header -->
 
+        <!-- form -->
             <form id="registform">
                 <div class="container-md" style="margin-top: 4vh;">
+                    <!-- menggunakan row untuk mempermudah merapikan tampilan  -->
                     <div class="row">
-    
+
+                        <!-- fiel input nama -->
                         <div class="col-md-6 col-sm-12">
                             <div class="mb-3">
                                 <label for="name" class="form-label"><b>Student's Name</b></label>
@@ -23,13 +31,15 @@
                             </div>
                         </div>
         
+                        <!-- field input tanggal ulang tahun -->
                         <div class="col-md-3 col-sm-6">
                             <div class="mb-3">
-                                <label for="birthdate" class="form-label"><b>Date of birth</b></label>
+                                <label for="birthdateIn" class="form-label"><b>Date of birth</b></label>
                                 <input name="birthdate" type="date" class="form-control" id="birthdateIn" >
                             </div>
                         </div>
         
+                        <!-- field input memilih gender -->
                         <div class="col-md-3 col-sm-6">
                             <div class="mb-3">
                                 <label for="gender" class="form-label"><b>Gender</b></label>
@@ -45,6 +55,7 @@
         
                     <div class="row">
         
+                        <!-- field input email dengan pattern yang sesuai -->
                         <div class="col-md-6 col-sm-6">
                             <div class="mb-3">
                                 <label for="email" class="form-label"><b>Email Address</b></label>
@@ -55,9 +66,12 @@
                             </div>
                         </div>
         
+                        <!-- field input nomor telepon dengan pattern yang sesuai -->
                         <div class="col-md-6 col-sm-6">
                             <div class="mb-3">
                                 <label for="phone" class="form-label"><b>Phone Number</b></label>
+
+                                <!-- field memilih country code untuk nomor telepon -->
                                 <div class="input-group">
                                     <select class="input-group-text" id="addon-wrapping" name="countryCode">
                                         <option value="" disabled>...</option>
@@ -77,6 +91,7 @@
                         </div>
                     </div>
         
+                    <!-- field mengisi alamat tempat tinggal -->
                     <div class="row">
                         <div class="col">
                             <div class="mb-3">
@@ -86,6 +101,7 @@
                         </div>
                     </div>
         
+                    <!-- field untuk memilih program studi yang diinginkan -->
                     <div class="row">
                         <div class="col">
                             <div class="mb-3">
@@ -100,6 +116,7 @@
                         </div>
                     </div>
         
+                    <!-- field untuk mengisi nama ayah -->
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <div class="mb-3">
@@ -116,6 +133,7 @@
                         </div>
                     </div>
         
+                    <!-- field untuk mengisi nama ibu -->
                     <div class="row">
                         <div class="col">
                             <div class="mb-3 photostudent">
@@ -127,16 +145,20 @@
         
                 </div>
     
+                <!-- tombol submit -->
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn" form="registform" value="submit" style="margin: 6vh; width: 40vh; color: white; background-color: brown;"><b>Submit!</b></button>
-                    
                 </div>
             </form>
+            <!-- end of form -->
+
+            <!-- membuat div dengan id yang dapat dipanggil di javascript untuk menaruh output dari form nantinya -->
             <div class="container" id="output"></div>
 
 
         </div>
 
+        <!-- memasukkan javascript dari file yang berbeda -->
         <script src="script.js"></script>
     </body>
 </html>
