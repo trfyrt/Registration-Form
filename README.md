@@ -1,4 +1,4 @@
-# Registration Form Project
+# Simple Registration Form
 This project contains a simple registration form created as part of the Week 10 Lab Assignment for a Web Programming course. It incorporates HTML, Bootstrap, and JavaScript to build a user-friendly form with client-side validation and dynamic output display upon submission.
 
 ## Project Contents
